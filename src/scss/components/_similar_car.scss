@@ -64,6 +64,10 @@
 		text-align: center;
 	}
 
+	&__card-icon {
+		cursor: pointer;
+	}
+
 	&__btn {
 		display: flex;
 		align-items: center;
