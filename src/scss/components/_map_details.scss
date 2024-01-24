@@ -1,0 +1,129 @@
+.map-details {
+	&__inner {
+		position: relative;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		@media screen and (max-width: 555px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__address {
+		position: absolute;
+		right: 25px;
+		bottom: 27px;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		padding: 25px;
+		width: 100%;
+		max-width: 472px;
+		box-shadow: 0 4px 16.2px 0 rgba(0, 0, 0, 0.09);
+		background-color: var(--white);
+
+		@media screen and (max-width: 555px) {
+			position: relative;
+			left: 50%;
+			right: auto;
+			bottom: auto;
+			padding: 15px;
+			width: 100vw;
+			transform: translateX(-50%);
+		}
+
+		// выход за границы container
+		// position: relative;
+		// left: 50%;
+		// width: 100vw;
+		// transform: translateX(-50%);
+	}
+
+	&__address-data {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		padding: 15px 23px;
+		box-shadow: 0 4px 16.2px 0 rgba(0, 0, 0, 0.09);
+		background-color: var(--white);
+		@media screen and (max-width: 998px) {
+			padding: 12px 18px;
+		}
+	}
+
+	&__address-data__info {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+
+	&__address-data__info-title {
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 175%;
+		color: var(--text-black);
+		@media screen and (max-width: 998px) {
+			font-size: 16px;
+		}
+	}
+
+	&__address-data__info-subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 175%;
+		color: var(--text-grey);
+		@media screen and (max-width: 998px) {
+			font-size: 12px;
+		}
+	}
+
+	&__address-checked {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		padding-left: 10px;
+		width: 306px;
+		height: 33px;
+		background-color: #f0f1f3;
+		@media screen and (max-width: 998px) {
+			margin-bottom: 14px;
+		}
+	}
+
+	&__address-checked-text {
+		margin-left: 9px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;
+		color: #ff4b4b;
+	}
+
+	&__address-btn {
+		border-radius: 10px;
+		padding: 30px 0;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		text-align: center;
+		@media screen and (max-width: 998px) {
+			padding: 23px 0;
+		}
+	}
+}
+
+.map {
+	overflow: hidden;
+	border-radius: 15px;
+	height: 542px;
+	background-color: green;
+
+	// height: 360px; mobile
+	@media screen and (max-width: 998px) {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,47 @@
+.crumbs {
+	display: flex;
+	gap: 36px;
+	@media screen and (max-width: 555px) {
+		gap: 28px;
+	}
+
+	&__inner {
+		margin-bottom: 19px;
+		@media screen and (max-width: 555px) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.crumb {
+	position: relative;
+	display: flex;
+
+	&::after {
+		position: absolute;
+		right: -18px;
+		display: block;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;
+		color: #898989;
+		@media screen and (max-width: 555px) {
+			right: -14px;
+		}
+	}
+
+	&:not(:last-child)::after {
+		content: '/';
+	}
+}
+
+.crumb-link {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #898989;
+
+	@media screen and (max-width: 555px) {
+		font-size: 10px;
+	}
+}

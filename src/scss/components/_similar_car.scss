@@ -1,0 +1,91 @@
+.similar_car {
+	// &__title {
+	// }
+
+	// &__inner {
+	// display: flex;
+	// flex-direction: column;
+	// }
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		margin-top: 28px;
+		margin-bottom: 40px;
+	}
+
+	// &__card-slider {
+	// }
+
+	&__card-details {
+		display: flex;
+		flex-direction: column;
+		margin-top: 13px;
+		margin-bottom: 15px;
+	}
+
+	&__card-details__price {
+		font-weight: 600;
+		font-size: 23px;
+		line-height: 100%;
+		color: var(--text-black);
+	}
+
+	&__card-details__model {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 150%;
+		color: var(--text-black);
+	}
+
+	&__card-details__info {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 190%;
+		color: var(--text-grey);
+	}
+
+	&__card-bottom {
+		display: flex;
+		align-items: center;
+	}
+
+	&__card-btn {
+		margin-right: 20px;
+		border-radius: 5px;
+		padding: 15px 30px;
+		width: 194px;
+		height: 55px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 160%;
+		text-align: center;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 17px 0;
+		background-color: var(--btn-bkg);
+		cursor: pointer;
+		@media screen and (max-width: 998px) {
+			padding: 21px 0;
+		}
+	}
+
+	&__btn-text {
+		margin-right: 5px;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 130%;
+		text-align: center;
+		color: var(--red);
+		@media screen and (max-width: 998px) {
+			font-weight: 500;
+			font-size: 15px;
+		}
+	}
+}

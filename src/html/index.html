@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('_head.html')
+
+<body>
+	<div class="wrapper">
+		@include('_header.html')
+		@include('_advantages.html')
+		@include('_crumbs.html')
+
+		<!-- main_card -->
+		<div class="main_card">
+			<div class="container">
+				<div class="card__inner">
+					@include('main_card/_slider.html')
+					@include('main_card/_details.html')
+				</div>
+			</div>
+		</div>
+
+		<!-- similar_car -->
+		@include('_similar_car.html')
+
+		<!-- bank_partner -->
+		@include('_bank_partner.html')
+
+		<!-- map -->
+		@include('_map.html')
+
+		@include('_footer.html')
+		@include('_present.html')
+		@include('modal/_modal_details.html')
+		@include('modal/_modal_credit.html')
+
+	</div>
+	<!-- @include('_script.html') -->
+</body>
+
+</html>

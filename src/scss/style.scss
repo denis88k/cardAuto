@@ -1,0 +1,25 @@
+@import 'vars';
+@import 'mixins';
+
+@import './fonts';
+@import 'reset';
+
+@import 'vendor';
+@import 'global';
+@import 'repeats';
+
+// components
+@import './components/header';
+@import './components/advantages';
+@import './components/crumbs';
+
+@import './components/present';
+
+// @import './components/modal';
+@import './components/main_card';
+@import './components/similar_car';
+@import './components/bank_partner';
+@import './components/map_details';
+@import './components/buy_car_fixed';
+
+@import './components/footer';
