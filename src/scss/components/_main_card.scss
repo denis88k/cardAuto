@@ -1,2 +1,17 @@
 @import './main_card/slider';
 @import './main_card/details';
+
+.card {
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-right: 15px;
+	}
+	&__slider-details {
+		display: flex;
+	}
+}

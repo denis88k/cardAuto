@@ -80,27 +80,9 @@
 		}
 	}
 
-	&__address-checked {
-		display: flex;
-		align-items: center;
+	.update-car {
 		margin-top: 10px;
 		margin-bottom: 20px;
-		border-radius: 5px;
-		padding-left: 10px;
-		width: 306px;
-		height: 33px;
-		background-color: #f0f1f3;
-		@media screen and (max-width: 998px) {
-			margin-bottom: 14px;
-		}
-	}
-
-	&__address-checked-text {
-		margin-left: 9px;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 150%;
-		color: #ff4b4b;
 	}
 
 	&__address-btn {
