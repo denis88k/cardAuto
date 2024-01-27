@@ -100,13 +100,6 @@
 		margin-right: 40px;
 		margin-left: 12px;
 		cursor: pointer;
-
-		& p {
-			font-weight: 400;
-			font-size: 13px;
-			line-height: 170%;
-			color: var(--text-grey);
-		}
 	}
 
 	&__phone-link {
@@ -114,6 +107,13 @@
 		font-size: 18px;
 		line-height: 130%;
 		color: var(--text-black);
+	}
+
+	&__phone-mgn{
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 170%;
+		color: var(--text-grey);
 	}
 
 	&__phone-btn {

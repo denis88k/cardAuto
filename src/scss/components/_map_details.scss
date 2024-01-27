@@ -33,12 +33,6 @@
 			width: 100vw;
 			transform: translateX(-50%);
 		}
-
-		// выход за границы container
-		// position: relative;
-		// left: 50%;
-		// width: 100vw;
-		// transform: translateX(-50%);
 	}
 
 	&__address-data {
@@ -83,6 +77,9 @@
 	.update-car {
 		margin-top: 10px;
 		margin-bottom: 20px;
+		@media screen and (max-width: 998px) {
+			margin-bottom: 14px;
+		}
 	}
 
 	&__address-btn {

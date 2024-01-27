@@ -4,35 +4,13 @@
 
 <body>
 	<div class="wrapper">
+		<!-- top -->
 		@include('_header.html')
 		@include('_advantages.html')
 		@include('_crumbs.html')
 
 		<!-- main_card -->
-		<div class="main_card">
-			<div class="container">
-				<div class="card__inner">
-					<div class='card__top'>
-						<h3 class='card__title title'>Honda Civic, VIII, 2007 г.</h3>
-
-						<div class="update-car">
-							<svg class="check_car" width="17" height="13">
-								<use href="img/sprite.svg#map_check"></use>
-							</svg>
-							<p class='update-car-text'>
-								Авто в наличии (обновлено 8 января)
-							</p>
-						</div>
-
-					</div>
-					<div class="card__slider-details">
-						@include('main_card/_slider.html')
-						@include('main_card/_details.html')
-					</div>
-
-				</div>
-			</div>
-		</div>
+		@include('_main_card.html')
 
 		<!-- similar_car -->
 		@include('_similar_car.html')
@@ -43,7 +21,10 @@
 		<!-- map -->
 		@include('_map.html')
 
+		<!-- footer -->
 		@include('_footer.html')
+
+		<!-- other -->
 		@include('_present.html')
 		@include('modal/_modal_details.html')
 		@include('modal/_modal_credit.html')

@@ -1,17 +1,58 @@
 @import './main_card/slider';
 @import './main_card/details';
 
+.main_card{
+	.container{
+		@media screen and (max-width: 440px) {
+			padding: 0;
+		}
+	}
+}
+
 .card {
 	&__top {
 		display: flex;
 		align-items: center;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: 940px) {
+			& .update-car{
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 440px) {
+			padding: 0 15px;
+		}
+		
+		&-info{
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 150%;
+			color: var(--text-grey);
+			@media screen and (max-width: 940px) {
+				display: none;
+			}
+		}
+
+		&-info__icon{
+			margin-right: 8px;
+			margin-left: 16px;
+		}
 	}
 
 	&__title {
 		margin-right: 15px;
 	}
+
 	&__slider-details {
 		display: flex;
+		gap: 17px 20px;
+		@media screen and (max-width: 1430px) {
+			flex-direction: column;
+		}
 	}
 }

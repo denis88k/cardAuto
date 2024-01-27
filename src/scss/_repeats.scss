@@ -27,9 +27,6 @@
 	width: 306px;
 	height: 33px;
 	background-color: #f0f1f3;
-	@media screen and (max-width: 998px) {
-		margin-bottom: 14px;
-	}
 }
 
 .update-car-text {
@@ -38,4 +35,37 @@
 	font-size: 14px;
 	line-height: 150%;
 	color: #ff4b4b;
+}
+
+// выход за границы container
+// position: relative;
+// left: 50%;
+// width: 100vw;
+// transform: translateX(-50%);
+
+
+.phone-manager {
+	display: flex;
+	align-items: center;
+
+	&__text {
+		margin-left: 12px;
+	}
+}
+
+.phone {
+	&__link {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 130%;
+		color: var(--text-black);
+		cursor: pointer;
+	}
+}
+
+.manager__count {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 170%;
+	color: var(--text-grey);
 }

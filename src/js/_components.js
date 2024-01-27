@@ -1,47 +1,5 @@
 import './components/headerMenu.js'; // header-menu
-import './vendor/swiper.js';
-
-const cardBasic = document.querySelector('.similar_car__card-basic');
-const sliderBasic = cardBasic.querySelectorAll('.similar_car__swiper');
-
-const initSlider = slider => {
-	// let swiper = new Swiper(`.${slider}`, {
-	let swiper = new Swiper(slider, {
-		// centeredSlides: true,
-		slidesPerView: 'auto',
-		spaceBetween: 10,
-		breakpoints: {
-			560: {
-				slidesPerView: '1',
-			},
-		},
-		// loop: true,
-		// navigation: {
-		// 	nextEl: '.swiper-button-next',
-		// 	prevEl: '.swiper-button-prev',
-		// },
-	});
-};
-
-sliderBasic.forEach(slider => {
-	initSlider(slider);
-	// console.log(slider.classList);
-});
-
-const cardSlider = document.querySelector('.card__swiper');
-const cardSliderMini = document.querySelector('.card__swiper-mini');
-let swiperCard = new Swiper(cardSlider, {
-	centeredSlides: true,
-	slidesPerView: '1',
-	spaceBetween: 1.21,
-});
-
-let swiperCardMini = new Swiper(cardSliderMini, {
-	spaceBetween: 10,
-	thumbs: {
-		swiper: swiperCard,
-	},
-});
+import './components/slider.js'; // slider
 
 // import './components/timer.js'; // таймер
 
