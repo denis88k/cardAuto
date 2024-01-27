@@ -1,19 +1,29 @@
-.details{
-	@media screen and (max-width: 440px) {
-		padding: 0 15px;
-	}
-}
+// .details{
+// @media screen and (max-width: 440px) {
+// 	padding: 0 15px;
+// }
+// }
 
 .details-top {
 	border-radius: 5px;
 	box-shadow: 0 4px 16.2px 0 rgba(0, 0, 0, 0.09);
 	background: var(--white);
 
+	@media screen and (max-width: 440px) {
+		box-shadow: none;
+	} 
+
 	&__price-btn {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		border-bottom: 1px solid #ECECEC;
 		padding: 10px 20px 10px 15px;
+
+		@media screen and (max-width: 440px) {
+			border-bottom: none;
+			padding: 0 10px;
+		} 
 	}
 
 	// &__price-total-month {
@@ -50,11 +60,11 @@
 	}
 
 	&__price-month {
+		margin-top: 5px;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 130%;
 		color: var(--red);
-    margin-top: 5px;
     
 		@media screen and (max-width: 615px) {
 			font-size: 13px;
@@ -71,7 +81,6 @@
 	}
   
 	&__btn-buy {
-		margin-left: 24px;
 		border-radius: 5px;
 		padding: 22px 66px;
 		font-weight: 600;
@@ -102,12 +111,22 @@
 				display: none;
 			}
 		}
+
+		@media screen and (max-width: 440px) {
+			padding: 12px 10px 15px;
+		} 
 	}
 
 	&__btns {
 		display: flex;
 		margin-right: 39px;
 		gap: 10px;
+		@media screen and (max-width: 440px) {
+			justify-content: space-between;
+			margin-right: 0;
+			width: 100%;
+			gap: 0;
+		}
 	}
 
 	&__btn {
@@ -147,6 +166,11 @@
 	background: rgba(236, 241, 247, 0.70);
 	cursor: pointer;
 
+	@media screen and (max-width: 440px) {
+		margin: 0 10px;
+		padding: 10px 22px 12px 10px;
+	}
+
 	&__icon {
 		width: 35px;
 		height: 35px;
@@ -166,7 +190,10 @@
 
 		@media screen and (max-width: 615px) {
 			margin-left: 15px;
+			width: 196px;
 			font-size: 14px;
+			line-height: 130%;
+
 		}
 	}
 
@@ -198,13 +225,20 @@
 	box-shadow: 0 4px 16.2px 0 rgba(0, 0, 0, 0.09);
 	background-color: var(--white);
 
+	@media screen and (max-width: 440px) {
+		margin: 15px 10px 0;
+	}
+
 	&__titles {
 		display: flex;
-		margin-bottom: 13px;
 		border-bottom: 1px solid #ECECEC;
 		padding-top: 15px;
 		padding-bottom: 13px;
 		padding-left: 15px;
+
+		@media screen and (max-width: 440px) {
+			padding-top: 12px;
+		}
 	}
 
 	&__title {
@@ -217,13 +251,19 @@
 		}
 
 		&:nth-child(1){
-			margin-right: 30px;
+			margin-right: 19px;
 			color: var(--text-black);
 		}
 
 		&:nth-child(2){
 			color: var(--text-grey);
+			@media screen and (max-width: 440px) {
+				span{
+					display: none;
+				}
+			}
 		}
+    
 	}
 
 	&__info {
@@ -234,8 +274,13 @@
 		padding-left: 25px;
 		height: 158px;
 		gap: 12px;
+
 		@media screen and (max-width: 940px) {
 			height: auto;
+		}
+
+		@media screen and (max-width: 440px) {
+			padding-left: 15px;
 		}
 	}
 
@@ -246,10 +291,6 @@
 	&__info-label {
 		width: 160px;
 		color: var(--text-grey);
-
-		// @media screen and (max-width: 615px) {
-
-		// }
 	}
 
 	&__info-content {
@@ -261,9 +302,17 @@
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 100%;
-		@media screen and (max-width: 615px) {
+	}
+  
+	@media screen and (max-width: 615px) {
+		&__info-label {
 			font-weight: 400;
 			font-size: 13px;
+		}
+
+		&__info-content {
+			font-weight: 500;
+			font-size: 14px;
 		}
 	}
 }
@@ -274,11 +323,19 @@
 	padding: 15px 25px 20px;
 	background-color: #F9F2F2;
 
+	@media screen and (max-width: 615px) {
+		padding: 16px 10px 15px;
+	}
+
 	&__title {
 		font-weight: 600;
 		font-size: 22px;
 		line-height: 130%;
 		color: var(--text-black);
+
+		@media screen and (max-width: 615px) {
+			font-size: 20px;
+		}
 	}
 
 	&__info {
@@ -287,10 +344,18 @@
 		margin-top: 15px;
 		margin-bottom: 25px;
 		gap: 12px;
+
+		@media screen and (max-width: 615px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__row {
 		display: flex;
+    
+		@media screen and (max-width: 615px) {
+			justify-content: space-between;
+		}
 	}
 
 	&__info-label {
@@ -315,6 +380,10 @@
 			height: 1px;
 			background-color: var(--white);
 		}
+		@media screen and (max-width: 615px) {
+			flex-grow: 1;
+			width: auto;
+		}
 	}
 
 	&__info-content {
@@ -331,6 +400,10 @@
 		text-align: center;
 		color: var(--white);
 		background-color: var(--red);
+
+		@media screen and (max-width: 615px) {
+			font-size: 15px;
+		}
 	}
 
 	&__info-label, &__info-content{
@@ -339,5 +412,14 @@
 		line-height: 100%;
 	}
 
-	
+	@media screen and (max-width: 615px) {
+		&__info-label{
+			font-weight: 400;
+			font-size: 13px;
+		}
+
+		&__info-content{
+			font-size: 14px;
+		}
+	}
 }

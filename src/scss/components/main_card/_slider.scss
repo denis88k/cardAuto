@@ -18,6 +18,7 @@
 	// }
 
 	&__swiper {
+		position: relative;
 		margin-bottom: 1px;
 
 		// width: 820px;
@@ -27,6 +28,33 @@
 
 		@media screen and (max-width: 440px) {
 			width: 100vw;
+		}
+
+		&-check{
+			display: none;
+			@media screen and (max-width: 615px) {
+				position: absolute;
+				z-index: 10;
+				display: flex;
+				align-items: center;
+				margin-top: 10px;
+				margin-left: 10px;
+				border-radius: 32px;
+				padding: 2px 8px 2px 3px;
+				background: rgba(0, 0, 0, 0.40);
+			}
+		}
+
+		&-check-icon{
+			margin-right: 5px;
+		}
+
+		&-check-text{
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 135%;
+			letter-spacing: -0.11px;
+			color: var(--white);
 		}
 	}
 
