@@ -1068,7 +1068,7 @@ body._lock {
 .advantage__block:not(:last-child) {
   margin-right: 37px;
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 615px) {
   .advantage__block {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -1272,6 +1272,23 @@ body._lock {
   line-height: 135%;
   letter-spacing: -0.11px;
   color: var(--white);
+}
+.card__swiper-like-icon {
+  display: none;
+}
+@media screen and (max-width: 615px) {
+  .card__swiper-like-icon {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    display: block;
+    margin-top: auto;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+  .card__swiper-like-icon.card__swiper-like-icon-active rect {
+    fill: red;
+  }
 }
 .card__swiper-mini {
   width: 820px;
@@ -1809,7 +1826,7 @@ body._lock {
   width: 340px;
   height: 235px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 615px) {
   .similar_car__swiper {
     border-radius: 5px 0 0 5px;
     height: 192px;
@@ -1818,7 +1835,7 @@ body._lock {
 .similar_car__swiper-icon-like, .similar_car__swiper-icon-report {
   display: none;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 615px) {
   .similar_car__swiper-icon-like, .similar_car__swiper-icon-report {
     position: absolute;
     display: block;
@@ -1828,7 +1845,7 @@ body._lock {
   overflow: hidden;
   border-radius: 10px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 615px) {
   .similar_car__slide {
     border-radius: 0;
     width: 256px;
@@ -1903,7 +1920,6 @@ body._lock {
   margin-right: 20px;
   border-radius: 5px;
   padding: 15px 30px;
-  width: 194px;
   height: 55px;
   font-weight: 700;
   font-size: 16px;
@@ -1913,6 +1929,8 @@ body._lock {
 @media screen and (max-width: 725px) {
   .similar_car__card-btn {
     margin-right: 15px;
+    font-size: 14px;
+    line-height: 130%;
   }
 }
 .similar_car__card-icon {

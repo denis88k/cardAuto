@@ -56,6 +56,25 @@
 			letter-spacing: -0.11px;
 			color: var(--white);
 		}
+
+		&-like-icon{
+			display: none;
+			@media screen and (max-width: 615px) {
+				position: absolute;
+				bottom: 10px;
+				z-index: 10;
+				display: block;
+				margin-top: auto;
+				margin-left: 10px;
+				transition: all 0.3s ease;
+
+				&.card__swiper-like-icon-active{
+					rect{
+						fill: red;
+					}
+				}
+			}
+		}
 	}
 
 	&__swiper-mini{
