@@ -18,7 +18,7 @@
 		margin-top: 28px;
 		margin-bottom: 40px;
 		gap: 40px 20px;
-		@media screen and (max-width: 730px) {
+		@media screen and (max-width: 1430px) {
 			justify-content: center;
 		}
 	}
@@ -197,6 +197,12 @@
 	&__card-icon {
 		display: block;
 		cursor: pointer;
+
+		&.similar_car__card-icon-active{
+			path{
+				fill: red;
+			}
+		}
 		@media screen and (max-width: 725px) {
 			display: none;
 		}

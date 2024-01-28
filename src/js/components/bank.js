@@ -1,4 +1,4 @@
-console.log(window.innerWidth);
+// console.log(window.innerWidth);
 if (window.innerWidth <= 688) {
 	const bankPartners = document.querySelectorAll('.bank-partner__bank');
 	const btnShowBanks = document.querySelector('.bank-partner__btn-show');

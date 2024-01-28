@@ -63,6 +63,13 @@
 			z-index: 10;
 			display: block;
 			margin-top: 15px;
+			cursor: pointer;
+
+			&.card__swiper-like-icon-active {
+				rect {
+					fill: red;
+				}
+			}
 
 			@media screen and (max-width: 615px) {
 				right: auto;
@@ -70,11 +77,7 @@
 				margin-left: 10px;
 				transition: all 0.3s ease;
 
-				&.card__swiper-like-icon-active {
-					rect {
-						fill: red;
-					}
-				}
+				
 			}
 		}
 	}

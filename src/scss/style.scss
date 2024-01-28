@@ -9,17 +9,22 @@
 @import 'repeats';
 
 // components
+@import './components/modal';
+@import './components/present';
+@import './components/buy_car_fixed';
+@import './components/form';
+@import './components/timer';
+
+// header
 @import './components/header';
 @import './components/advantages';
 @import './components/crumbs';
 
-@import './components/present';
-
-// @import './components/modal';
+// main
 @import './components/main_card';
 @import './components/similar_car';
 @import './components/bank_partner';
 @import './components/map_details';
-@import './components/buy_car_fixed';
 
+// footer
 @import './components/footer';

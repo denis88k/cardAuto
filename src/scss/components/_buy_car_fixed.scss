@@ -1,13 +1,34 @@
 .buy-car-fixed {
+	position: absolute;
+	bottom: 0;
+
+	transform: translateY(100%);
+	transition: all 0.3s linear;
+
+	&-show {
+		position: fixed;
+		bottom: 15px;
+
+		// left: 0;
+		// right: 0;
+		z-index: 20;
+
+		width: 100%;
+
+		transform: translateY(0);
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 15px;
+
+		// margin-bottom: 15px;
 		border-radius: 0;
 		padding: 16px;
 		box-shadow: 0 4px 32px 0 rgba(0, 16, 61, 0.12);
 		background-color: var(--white);
-		transition: all 0.3s ease;
+
+		// transition: all 0.3s ease;
 	}
 
 	&__left {
@@ -53,4 +74,6 @@
 		color: var(--white);
 		background-color: #eb1d24;
 	}
+
+	
 }

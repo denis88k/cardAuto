@@ -13,3 +13,11 @@ likeSimilarSlider.forEach(like => {
 		toggleClass(like, 'similar_car__swiper-icon-like-active');
 	});
 });
+
+const likeSimilarCard = document.querySelectorAll('.similar_car__card-icon');
+
+likeSimilarCard.forEach(like => {
+	like.addEventListener('click', () => {
+		toggleClass(like, 'similar_car__card-icon-active');
+	});
+});
