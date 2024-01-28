@@ -22,7 +22,7 @@ if (window.innerWidth <= 825) {
 	mainColor = 'transparent';
 }
 
-// ежемесячный платёж
+// NOTE: ежемесячный платёж
 const monthPayCalc = () => {
 	const totalPrice = Number(document.querySelector('.total-price').innerText.replaceAll(' ', ''));
 
@@ -31,10 +31,10 @@ const monthPayCalc = () => {
 	const creditTermCurrent = Number(document.querySelector('.range-credit-term').value);
 	// console.log(firstPayCurrent, creditTermCurrent);
 	// console.log(firstPayCurrent / creditTermCurrent);
-	monthPay.innerHTML = ((totalPrice - firstPayCurrent) / creditTermCurrent).toLocaleString();
+	monthPay.innerHTML = Number(((totalPrice - firstPayCurrent) / creditTermCurrent).toFixed(0)).toLocaleString();
 };
 
-// первоначальный платёж
+// NOTE: первоначальный платёж
 const firstPayRange = () => {
 	const currentRange = rangeSliders[0];
 	const tempSliderValue = currentRange.value;
@@ -64,7 +64,13 @@ const firstPayRange = () => {
 	});
 };
 
-// срок кредитования
+// NOTE: число срока кредитования
+const countCreditTerm = value => {
+	const creditTerm = document.querySelector('.credit-term');
+	creditTerm.innerHTML = value + 6;
+};
+
+// NOTE: срок кредитования
 const creditTermRange = () => {
 	const currentRange = rangeSliders[1];
 	const tempSliderValue = currentRange.value - 6;
@@ -72,15 +78,21 @@ const creditTermRange = () => {
 
 	currentRange.style.background = `linear-gradient(to right, ${rangeColor} ${progress}%, ${mainColor} ${progress}%)`;
 
+	countCreditTerm(tempSliderValue);
+
 	currentRange.addEventListener('input', e => {
 		const tempSliderValue = e.target.value - 6;
 		const progress = (tempSliderValue / (currentRange.max - 6)) * 100;
 		// console.log(tempSliderValue, progress);
 
 		currentRange.style.background = `linear-gradient(to right, ${rangeColor} ${progress}%, ${mainColor} ${progress}%)`;
+
+		countCreditTerm(tempSliderValue);
+		monthPayCalc();
 	});
 };
 
-firstPayRange(); // первоначальный платёж
+// вызов
+NOTE: firstPayRange(); // первоначальный платёж
 creditTermRange(); // срок кредитования
 monthPayCalc(); // ежемесячный платёж
