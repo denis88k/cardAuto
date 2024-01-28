@@ -44,10 +44,7 @@
     "gulp-typograf": "^4.1.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-version-number": "0.2.4",
-    "gulp-webp": "^4.0.1",
-    "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-zip": "5.1.0",
-    "node-w3c-validator": "^2.0.1",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
     "stylelint": "^15.6.0",
@@ -61,8 +58,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.19",
-    "just-validate": "^4.2.0",
-    "swiper": "^9.4.1"
+    "just-validate": "^4.2.0"
   }
 }

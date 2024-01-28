@@ -43,7 +43,7 @@ const initSlider = slider => {
 		slidesPerView: 'auto',
 		spaceBetween: 10,
 		breakpoints: {
-			615: {
+			560: {
 				slidesPerView: '1',
 			},
 		},

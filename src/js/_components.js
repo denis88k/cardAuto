@@ -1,6 +1,7 @@
 import './components/headerMenu.js'; // header-menu
 import './components/like.js'; // like
 import './components/slider.js'; // slider
+import './components/bank.js'; // bank
 
 // import './components/timer.js'; // таймер
 

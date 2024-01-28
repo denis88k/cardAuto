@@ -1242,7 +1242,7 @@ body._lock {
     height: calc(260px + 369 * (100vw - 320px) / 1100);
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 615px) {
   .card__swiper {
     width: 100vw;
   }
@@ -1274,15 +1274,16 @@ body._lock {
   color: var(--white);
 }
 .card__swiper-like-icon {
-  display: none;
+  position: absolute;
+  right: 15px;
+  z-index: 10;
+  display: block;
+  margin-top: 15px;
 }
 @media screen and (max-width: 615px) {
   .card__swiper-like-icon {
-    position: absolute;
+    right: auto;
     bottom: 10px;
-    z-index: 10;
-    display: block;
-    margin-top: auto;
     margin-left: 10px;
     transition: all 0.3s ease;
   }
@@ -1298,7 +1299,7 @@ body._lock {
     width: calc(360px + 460 * (100vw - 320px) / 1100);
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 615px) {
   .card__swiper-mini {
     width: 100vw;
   }
@@ -1722,7 +1723,7 @@ body._lock {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 615px) {
   .main_card .container {
     padding: 0;
   }
@@ -1738,9 +1739,9 @@ body._lock {
     display: none;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 615px) {
   .card__top {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }
 .card__top-info {
@@ -1838,7 +1839,28 @@ body._lock {
 @media screen and (max-width: 615px) {
   .similar_car__swiper-icon-like, .similar_car__swiper-icon-report {
     position: absolute;
+    z-index: 10;
     display: block;
+  }
+}
+@media screen and (max-width: 615px) {
+  .similar_car__swiper-icon-like {
+    left: 5px;
+    top: 5px;
+  }
+  .similar_car__swiper-icon-like.similar_car__swiper-icon-like-active rect {
+    fill: red;
+  }
+}
+@media screen and (max-width: 615px) {
+  .similar_car__swiper-icon-report {
+    left: 5px;
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .similar_car__swiper {
+    width: 100vw;
   }
 }
 .similar_car__slide {
@@ -2028,6 +2050,7 @@ body._lock {
 .bank-partner__banks {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
   gap: 13px;
 }
@@ -2038,7 +2061,6 @@ body._lock {
 }
 @media screen and (max-width: 500px) {
   .bank-partner__banks {
-    justify-content: center;
     margin-right: auto;
     margin-left: auto;
   }
@@ -2055,11 +2077,16 @@ body._lock {
   cursor: pointer;
 }
 .bank-partner__btn-show {
-  display: flex;
-  justify-content: center;
-  padding: 22px 0;
-  background-color: var(--btn-bkg);
-  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 688px) {
+  .bank-partner__btn-show {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0;
+    background-color: var(--btn-bkg);
+    cursor: pointer;
+  }
 }
 .bank-partner__btn-show__text {
   margin-right: 5px;
@@ -2075,7 +2102,7 @@ body._lock {
 .map-details__title {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 1075px) {
   .map-details__title {
     margin-bottom: 15px;
   }
@@ -2094,12 +2121,13 @@ body._lock {
   box-shadow: 0 4px 16.2px 0 rgba(0, 0, 0, 0.09);
   background-color: var(--white);
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 1075px) {
   .map-details__address {
     position: relative;
     left: 50%;
     right: auto;
     bottom: auto;
+    margin-bottom: 20px;
     padding: 15px;
     width: 100vw;
     transform: translateX(-50%);
@@ -2176,7 +2204,6 @@ body._lock {
 }
 @media screen and (max-width: 998px) {
   .map {
-    margin-top: 20px;
     height: 360px;
   }
 }
@@ -2266,7 +2293,7 @@ body._lock {
   justify-content: center;
   margin-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 @media screen and (max-width: 555px) {
   .footer__nav {
@@ -2274,14 +2301,14 @@ body._lock {
     margin-bottom: 20px;
   }
 }
-.footer__item {
+.footer__item-link {
   font-weight: 500;
   font-size: 17px;
   line-height: 150%;
   color: var(--text-black);
 }
 @media screen and (max-width: 555px) {
-  .footer__item {
+  .footer__item-link {
     font-size: 16px;
     line-height: 200%;
   }

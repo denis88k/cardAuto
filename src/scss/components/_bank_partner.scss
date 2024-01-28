@@ -31,10 +31,11 @@
 	&__banks {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin-top: 20px;
 		@include adaptiv-value(gap, 13, 10, 1);
+
 		@media screen and (max-width: 500px) {
-			justify-content: center;
 			margin-right: auto;
 			margin-left: auto;
 		}
@@ -53,11 +54,14 @@
 	}
 
 	&__btn-show {
-		display: flex;
-		justify-content: center;
-		padding: 22px 0;
-		background-color: var(--btn-bkg);
-		cursor: pointer;
+		display: none;
+		@media screen and (max-width: 688px) {
+			display: flex;
+			justify-content: center;
+			padding: 22px 0;
+			background-color: var(--btn-bkg);
+			cursor: pointer;
+		}
 	}
 
 	&__btn-show__text {

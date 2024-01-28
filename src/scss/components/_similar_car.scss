@@ -29,21 +29,21 @@
 	}
 
 	// mobile
-	&__card-details-mobile{
+	&__card-details-mobile {
 		display: none;
 
 		@media screen and (max-width: 725px) {
 			display: block;
 		}
 
-		&__model{
+		&__model {
 			font-weight: 700;
 			font-size: 17px;
 			line-height: 130%;
 			color: var(--text-black);
 		}
 
-		&__info{
+		&__info {
 			margin: 3px 0 10px;
 			font-weight: 400;
 			font-size: 12px;
@@ -61,12 +61,38 @@
 			height: 192px;
 		}
 
-		&-icon-like, &-icon-report{
+		&-icon-like,
+		&-icon-report {
 			display: none;
 			@media screen and (max-width: 615px) {
 				position: absolute;
+				z-index: 10;
 				display: block;
 			}
+		}
+
+		&-icon-like {
+			@media screen and (max-width: 615px) {
+				left: 5px;
+				top: 5px;
+
+				&.similar_car__swiper-icon-like-active {
+					rect {
+						fill: red;
+					}
+				}
+			}
+		}
+
+		&-icon-report {
+			@media screen and (max-width: 615px) {
+				left: 5px;
+				bottom: 5px;
+			}
+		}
+
+		@media screen and (max-width: 560px) {
+			width: 100vw;
 		}
 	}
 
@@ -93,7 +119,6 @@
 			margin-top: 10px;
 			margin-bottom: 12px;
 		}
-		
 	}
 
 	&__card-details__price {
@@ -105,7 +130,7 @@
 		color: var(--text-black);
 	}
 
-	&__card-details__price-discount-mobile{
+	&__card-details__price-discount-mobile {
 		display: none;
 
 		@media screen and (max-width: 725px) {
@@ -119,7 +144,7 @@
 		}
 	}
 
-	&__card-details__price-month-mobile{
+	&__card-details__price-month-mobile {
 		display: none;
 
 		@media screen and (max-width: 725px) {
@@ -178,21 +203,21 @@
 	}
 
 	// mobile
-	&__card-phone-text__mobile{
+	&__card-phone-text__mobile {
 		display: none;
 		@media screen and (max-width: 725px) {
 			display: block;
 		}
 	}
 
-	&__card-phone__mobile{
+	&__card-phone__mobile {
 		font-weight: 600;
 		font-size: 15px;
 		line-height: 130%;
-		color: var(--text-black); 
+		color: var(--text-black);
 	}
 
-	&__card-text__mobile{
+	&__card-text__mobile {
 		font-weight: 400;
 		font-size: 11px;
 		line-height: 170%;
@@ -225,7 +250,8 @@
 		}
 	}
 
-	&__card-details__model, &__card-details__info{
+	&__card-details__model,
+	&__card-details__info {
 		@media screen and (max-width: 725px) {
 			display: none;
 		}

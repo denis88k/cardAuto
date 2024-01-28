@@ -1,9 +1,9 @@
 @import './main_card/slider';
 @import './main_card/details';
 
-.main_card{
-	.container{
-		@media screen and (max-width: 440px) {
+.main_card {
+	.container {
+		@media screen and (max-width: 615px) {
 			padding: 0;
 		}
 	}
@@ -16,16 +16,16 @@
 		margin-bottom: 20px;
 
 		@media screen and (max-width: 940px) {
-			& .update-car{
+			& .update-car {
 				display: none;
 			}
 		}
 
-		@media screen and (max-width: 440px) {
-			padding: 0 15px;
+		@media screen and (max-width: 615px) {
+			padding: 0 10px;
 		}
-		
-		&-info{
+
+		&-info {
 			display: flex;
 			align-items: center;
 			margin-left: auto;
@@ -38,7 +38,7 @@
 			}
 		}
 
-		&-info__icon{
+		&-info__icon {
 			margin-right: 8px;
 			margin-left: 16px;
 		}
