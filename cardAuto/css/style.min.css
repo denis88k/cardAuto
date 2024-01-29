@@ -3294,6 +3294,7 @@ body._lock {
   .bank-partner__banks {
     margin-right: auto;
     margin-left: auto;
+    gap: 10px;
   }
 }
 .bank-partner__bank {
