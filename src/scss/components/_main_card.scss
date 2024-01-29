@@ -2,6 +2,8 @@
 @import './main_card/details';
 
 .main_card {
+	margin-bottom: 20px;
+
 	.container {
 		@media screen and (max-width: 615px) {
 			padding: 0;

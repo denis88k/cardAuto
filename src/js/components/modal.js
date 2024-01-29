@@ -10,6 +10,7 @@ const modalErrorDelete = modal => {
 const modal = (btnOpen, modal, btnClose, isLink = false) => {
 	!isLink && (btnOpen = document.querySelector(btnOpen));
 	modal = document.querySelector(modal);
+	const modalClose = modal.querySelector('.modal__body');
 	btnClose = document.querySelector(btnClose);
 	const body = document.body;
 	const removeActiveClassModal = () => {
@@ -29,7 +30,7 @@ const modal = (btnOpen, modal, btnClose, isLink = false) => {
 	});
 	// закрытие модального окна: по области вокруг модального окна
 	modal?.addEventListener('click', e => {
-		if (e.target === modal) {
+		if (e.target === modalClose) {
 			removeActiveClassModal();
 		}
 	});

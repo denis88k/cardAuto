@@ -1,21 +1,9 @@
 .card {
-	// &-slider{
-	// @media screen and (max-width: 440px) {
-	// 	position: relative;
-	// 	left: 50%;
-	// 	min-width: 100vw;
-	// 	transform: translateX(-50%);
-	// }
-	// @media screen and (max-width: 440px) {
-	// 	// left: auto;
-	// 	// margin-left: 0;
-	// 	min-width: 360px;
-
-	// 	// width: 360px;
-
-	// 	// transform: none;
-	// }
-	// }
+	&-slider{
+		position: sticky;
+		top: 10px;
+		height: fit-content;
+	}
 
 	&__swiper {
 		position: relative;

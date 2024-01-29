@@ -63,6 +63,7 @@ const validateForms = form => {
 
 			const body = document.body;
 			const modal = document.querySelector('.modal-sendForm');
+			const modalClose = modal.querySelector('.modal__body');
 			const btnClose = document.querySelector('.modal-sendForm .modal__close');
 
 			body.classList.add('_lock');
@@ -74,7 +75,7 @@ const validateForms = form => {
 			});
 
 			modal.addEventListener('click', e => {
-				if (e.target === modal) {
+				if (e.target === modalClose) {
 					body.classList.remove('_lock');
 					modal.classList.remove('active');
 				}
