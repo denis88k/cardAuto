@@ -21,6 +21,10 @@
 			top: 50%;
 			font-size: 18px;
 			transform: translateY(-50%);
+			
+			@media screen and (max-width: 560px) {
+				font-size: 14px;
+			}
 		}
 	}
 

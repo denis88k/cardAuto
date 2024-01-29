@@ -968,6 +968,7 @@ body._lock {
 }
 @media screen and (max-width: 560px) {
   .modal-credit .modal__inner {
+    margin: 0;
     border-radius: 0;
     padding: 16px 10px;
   }
@@ -1071,7 +1072,7 @@ body._lock {
 }
 @media screen and (max-width: 825px) {
   .modal-credit__calculation-range-block:first-child {
-    margin-bottom: 41px;
+    margin-bottom: 44px;
     border-radius: 5px;
   }
 }
@@ -1094,6 +1095,8 @@ body._lock {
 @media screen and (max-width: 825px) {
   .modal-credit__calculation-range-title {
     margin-left: 0;
+    font-size: 12.5px;
+    line-height: 120%;
   }
 }
 .modal-credit__calculation-range-count {
@@ -1112,7 +1115,9 @@ body._lock {
 }
 @media screen and (max-width: 560px) {
   .modal-credit__calculation-range-count {
+    margin-top: 7px;
     margin-bottom: 2px;
+    font-size: 17px;
     line-height: 110%;
   }
 }
@@ -1257,6 +1262,9 @@ body._lock {
   .modal-credit__form.form {
     gap: 10px;
   }
+}
+.modal-credit__form .input__name + .just-validate-error-label {
+  display: none;
 }
 .modal-credit__form .form__input {
   border: none;
@@ -1419,6 +1427,11 @@ body._lock {
   justify-content: center;
   padding: 20px 10px;
   min-height: 100%;
+}
+@media screen and (max-width: 560px) {
+  .modal.active .modal__body {
+    padding: 5px 10px 1px 10px;
+  }
 }
 
 .modal-credit.active .modal__body {
@@ -1920,6 +1933,11 @@ body._lock {
   top: 50%;
   font-size: 18px;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 560px) {
+  .form__item .just-validate-error-label {
+    font-size: 14px;
+  }
 }
 .form .input__tel {
   position: relative;
@@ -2446,6 +2464,9 @@ body._lock {
     width: 100vw;
   }
 }
+.card__swiper .swiper-button-prev, .card__swiper .swiper-button-next {
+  color: var(--red);
+}
 .card__swiper-check {
   display: none;
 }
@@ -2640,6 +2661,13 @@ body._lock {
   margin-right: 39px;
   gap: 10px;
 }
+@media screen and (max-width: 615px) {
+  .details-top__btns {
+    width: 100%;
+    margin-right: 0;
+    gap: 7px;
+  }
+}
 @media screen and (max-width: 440px) {
   .details-top__btns {
     justify-content: space-between;
@@ -2665,6 +2693,7 @@ body._lock {
     padding: 13px 0;
     width: 126px;
     font-size: 14px;
+    flex-grow: 1;
   }
 }
 .details-top__btn-icon-phone {
@@ -2688,7 +2717,7 @@ body._lock {
 @media screen and (max-width: 440px) {
   .details-report {
     margin: 0 10px;
-    padding: 10px 22px 12px 10px;
+    padding: 15px 22px 15px 10px;
   }
 }
 .details-report__icon {
@@ -2795,6 +2824,7 @@ body._lock {
 @media screen and (max-width: 940px) {
   .details-character__info {
     height: auto;
+    gap: 9px;
   }
 }
 @media screen and (max-width: 440px) {
@@ -2860,6 +2890,7 @@ body._lock {
 @media screen and (max-width: 615px) {
   .details-terms__info {
     margin-bottom: 20px;
+    gap: 11px;
   }
 }
 .details-terms__row {

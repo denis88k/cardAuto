@@ -127,6 +127,13 @@
 		display: flex;
 		margin-right: 39px;
 		gap: 10px;
+
+		@media screen and (max-width: 615px) {
+			width: 100%;
+			margin-right: 0;
+			gap: 7px;
+		}
+
 		@media screen and (max-width: 440px) {
 			justify-content: space-between;
 			margin-right: 0;
@@ -151,6 +158,7 @@
 			padding: 13px 0;
 			width: 126px;
 			font-size: 14px;
+			flex-grow: 1;
 		}
 	}
 
@@ -174,7 +182,7 @@
 
 	@media screen and (max-width: 440px) {
 		margin: 0 10px;
-		padding: 10px 22px 12px 10px;
+		padding: 15px 22px 15px 10px;
 	}
 
 	&__icon {
@@ -283,6 +291,7 @@
 
 		@media screen and (max-width: 940px) {
 			height: auto;
+			gap: 9px;
 		}
 
 		@media screen and (max-width: 440px) {
@@ -353,6 +362,7 @@
 
 		@media screen and (max-width: 615px) {
 			margin-bottom: 20px;
+			gap: 11px;
 		}
 	}
 
