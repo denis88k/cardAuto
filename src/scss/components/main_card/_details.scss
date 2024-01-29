@@ -129,8 +129,8 @@
 		gap: 10px;
 
 		@media screen and (max-width: 615px) {
-			width: 100%;
 			margin-right: 0;
+			width: 100%;
 			gap: 7px;
 		}
 
@@ -155,10 +155,10 @@
 		cursor: pointer;
 
 		@media screen and (max-width: 615px) {
+			flex-grow: 1;
 			padding: 13px 0;
 			width: 126px;
 			font-size: 14px;
-			flex-grow: 1;
 		}
 	}
 
