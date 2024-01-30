@@ -1444,7 +1444,7 @@ body._lock {
   position: fixed;
   left: 15px;
   bottom: 120px;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   flex-direction: column;
 }
@@ -1508,7 +1508,7 @@ body._lock {
 .buy-car-fixed-show {
   position: fixed;
   bottom: 15px;
-  z-index: 20;
+  z-index: 100;
   width: 100%;
   transform: translateY(0);
 }
